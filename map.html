@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>map,filter,reduce</title>
+</head>
+<body>
+    <script>
+       var personas = [
+        {name:"John", age: 25},
+        {name:"Jane", age: 30},
+        {name:"Bob", age: 35},
+       ];
+       p4 = {name: "Jeremías", age: 69}
+       p5 = {name: "Leandro", age: 43}
+       const lista_entera = personas.push(p4,p5);
+       console.log(lista_entera)
+        const nombre = personas.map(x=> x.name);
+        console.log(nombre);
+        const mayores_30 = personas.filter(x=> x.age >=30);
+        console.log(mayores_30);
+        const suma_de_edades = personas.reduce((acum, x) => acum + x.age,0);
+        console.log(suma_de_edades);
+    </script>
+</body>
+</html>
